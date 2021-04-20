@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--  WEB110 FINAL TEST - Local Hero 
+Author:Ajima Master
+stuudent No: #0771451 -->
+
+ <title>Hero Nomination</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<style type="text/css">
+   body { background: url(back2.jpg); font-size: 12pt; font-family: Book Antiqua; line-height: 16pt; margin-left: 15px; margin-right: 15px; color: maroon; }
+   p  { margin-left: 24px; margin-right: 24px; }
+   h1 { font-size: 24pt; font-family: Prose Antique, Lucida Handwriting; line-height: 30pt; 
+        text-align: center}
+   h2 { font-size: 18pt; font-family: Prose Antique, Lucida Handwriting; font-weight: bold; 
+        line-height: 22pt; }
+   div.byline { font-style: italic; }
+   div.footnote { font-size: 9pt;  text-align: center; }
+   address { border-top: 4px solid black; font-style: normal; font-size: 12pt; 
+        font-family: sans-serif; text-align: center; color: white; background-color: rgb(192,80,77); }
+   table caption { caption-side:bottom; text-align:right; } 
+table th,td{
+border:1px solid black;
+}
+
+
+   </style>
+</head>
+
+<body>
+<h1>Nominate a local HERO today!</h1>
+<h2>Nomination Details</h2>
+<div class="byline">
+ by {Your name goes here} 
+</div>
+<p>Here is your chance to nominate someone from your community who you think is a hero.    Simply fill in the form below and submit your entry. </p>
+
+<div class="footnote">
+ <span style="font-style: italic">My name is {Ajima}, and I attend St. Clair College in Windsor, Ontario.</span>
+</div>
+
+<hr style="color: rgb(133,0,0); background-color: rgb(133,0,0); height: 1" />
+
+<p>Nominate your local hero here!</p>
+
+<!-- *********************************************** -->
+<!-- PART ONE: The FORM starts here    ************* --> 
+<!-- *********************************************** -->
+
+    <form>
+
+	<form id="survey" action="FormProcessor.html" method="post">
+	 <fieldset id="NommineeInfo">
+		<legend>Your Information</legend>
+		Your First Name
+		<input type="text" name="studentFname" id="firstname" placeholder="firstname here" autofocus required>&nbsp;
+		Last Name
+		<input type="text" name="studentLname" id="lastname" placeholder="lastname here" autofocus required>&nbsp;
+		<br/><br/>
+		Contact Email
+			<input type="email" name="studentEmail" id="mail" required>&nbsp;&nbsp;
+		Country of birth
+			<input type="text" name="NommineeCountry" id="country" value="Canada" autofocus required>&nbsp;
+ 		<fieldset id="NommineeInfo">
+			<legend>Nominee Information</legend>
+		Your First Name
+			<input type="text" name="studentFname" id="firstname" placeholder="firstname here" autofocus required>&nbsp;
+		Last Name
+			<input type="text" name="studentLname" id="lastname" placeholder="lastname here" autofocus required/>
+	
+		
+               	Gender
+            female  <input name="Gender" id="NomineeGender" value="Female" type="radio">
+               Male
+               		<input type="radio" name="Gender" id="NomineeGender" value="Male">
+<br /><br />
+
+			<div class="formRow">
+               Municipalty
+               <select name="municipalty" id="Municipalty"/>
+                  <option value="Municipalty1">Amherstburg</option>
+                  <option value="Municipalty2">Essex</option>
+                  <option value="Municipalty3">Kingsville</option>
+                  <option value="Municipalty4">Lakeshore</option>
+		  <option value="Municipalty5">LaSalle</option>
+		  <option value="Municipalty6">Tecumseh</option>
+		<option value="Municipalty7">Lemington</option>
+		<option value="Municipalty8">Windsor</option>
+</div>
+<br /><br />
+	<div class="formRow">	
+         <label for="comments">Comments:Why do you think this person needs to be dominated?</label>
+         <textarea name="nomineeFeed" id="comments" rows="5" cols="80" >Enter 10 words or more.</textarea><br/>
+</div>
+<br /><br />
+
+	<input type="checkbox" name="age" id="nomineeAge" value="yes">
+            <label for="nomineeAge">I am 18 years of age or older</label>
+		<br /><br />
+            <div class="formRow">
+               <label for="info">Rank this nominee:(1 to 10)</label>
+               <select id="rank" type="number"  >
+                  <option value="1">1</option>
+                  <option value="2">2</option>   
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                 <option value="6">6</option>
+ <option value="7">7</option>
+ <option value="8">8</option>
+ <option value="9">9</option>
+ <option value="10">10</option><br/>
+
+
+               </select>
+
+            </div>
+<br /><br />
+<label for="pwd">Member Password</label>
+<input type="password" id="pwd" name="pwd">
+
+<br /><br />
+<div class="mylib">
+            <label for="rangeBox">Rate this candidate(70=ok;80=good;90=very good;100=great)</label>
+            70
+            <input type="range" name="rate" id="rangeBox" value="90" step="1" min="70" max="100">
+            100
+         </div>
+<br /><br />
+	
+ </fieldset>
+<br /><br />
+         <div id="buttons">
+            <input type="submit" value="SubmitForm">
+            <input type="reset" value="Cancel">
+
+         
+         
+      
+
+     
+   
+ 
+	
+ 
+ 
+
+	  <br />
+	<!-- Nominee information here --> 
+ 
+ 
+ 
+ 
+</div>
+    </form>
+</section>
+<!-- Form ends here --> 
+
+
+
+        
+
+		
+	
+
+
+
+
+<!-- *********************************************** -->
+<!-- PART TWO: Create your Personal HTML TABLE here! -->
+<!-- *********************************************** -->
+<table class="schedule">
+               <caption>Current Date:mm/dd/yy</caption>
+               <colgroup>
+                  <col id="firstCol" />
+                  <col class="dayCols" span="3" />
+               </colgroup>
+             <!-- <thead>
+                  <tr>
+                     <th>Personal Information</th>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                  </tr>
+               </thead>-->
+
+
+               <tbody>
+                  <tr>
+                     
+                     <td colspan="3">Personal Information</td>
+                  </tr>
+
+                  <tr>
+                      <td rowspan="4"><img src="myimg.jpg"></td>
+                     <td colspan="2">Your full Name goes here</td>
+ </tr>
+ <tr>			
+<td colspan="2">Address:Address here</td>
+ </tr>
+ <tr>
+			<td>City Here</td>
+                     <td>Province here</td>
+ </tr>
+ <tr>
+<td>Country here</td>
+<td>Favourite color here</td>
+ </tr>
+                     
+                
+                     
+                  
+               </tbody>
+            </table>
+         
+    
+
+
+
+    <br /><br />
+<!-- Insert Address here ... separate address test using &#183; special character --> 
+<div class="footnote">
+<hr>
+    <footer>
+ <address>
+      Address: &#183; St.Clair College &#183;2000 Talbot Road West &#183;  Windsor,  N9A 6S4 &#183; (519)555-1212
+ </address>
+</footer>
+<hr>
+</div>
+
+</body>
+</html>
